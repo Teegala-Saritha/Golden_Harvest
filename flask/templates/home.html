@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quality</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/styles.css') }}">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+          <div id="lg">
+            <div id="ns">
+              <header id="name">Quality</header>
+              <nav id="nav">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    
+                
+                
+                </ul>
+              </nav>
+            </div>
+            
+            <div id="home">
+              <div class="home-container">
+                <img src="../img2.png">
+              </div>
+            </div>
+
+    
+    
+    <!-- Navigation -->
+    
+    
+       <div class="container">
+        <form action="/submit" method="post">
+            <h1>Quality</h1>
+            <br>
+            <label>A_id</label>
+            <br>
+            <input type="number" name="A_id" required/>
+            <br>
+            <label>Size</label>
+            <br>
+            <input type="number" name="size" required/>
+            <br>
+            <label>Weight</label>
+            <br>
+            <input type="number" name="weight" required/>
+            <br>
+            <label>Sweetness</label>
+            <br>
+            <input type="number" name="sweetness" required/>
+            <br>
+            <label>Crunchiness</label>
+            <br>
+            <input type="number" name="crunchiness" required/>
+            <br>
+            <label>Juiciness</label>
+            <br>
+            <input type="number" name="juiciness" required/>
+            <br>
+            <label>Ripeness</label>
+            <br>
+            <input type="number" name="ripeness" required/>
+            <br>
+            <label>Acidity</label>
+            <br>
+            <input type="number" name="acidity" required/>
+            <br>
+          
+            <br>
+            <button> predict </button>
+        </form>
+    </div>
+        
+    </body>
+    </html>
